@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DUDUscents</title>
+    <style>
+      h1 {
+        color: #6604ef;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+      }
+      h2 {
+        border: 1px solid #ea10cd;
+        border-radius: 4px;
+        padding: 12px;
+        text-align: center;
+        color: #ea10cd;
+      }
+      p {
+        line-height: 1;
+        font-size: 14px;
+        margin: 20px 0 10px;
+      }
+      button {
+        background: transparent;
+        color: #6604ef;
+        display: block;
+        font-size: 15px;
+        border: 5px solid #ea10cd;
+        border-radius: 12px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px 10px 5px 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: #ea10cd;
+        color: #f5f0fe;
+        cursor: pointer;
+      }
+      ul {
+        font-size: large;
+        margin: 16px 16px;
+        display: block;
+        list-style: none;
+        text-align: center;
+        padding: 0px 0px 15px 0px;
+      }
+      li {
+        display: block;
+        margin-right: 30px;
+        color: rgba(0, 0, 0, 0.7);
+        list-style: none;
+        text-align: center;
+        padding: 20px;
+      }
+      li:hover {
+        background-color: #e06dd7;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 400;
+      }
+      img {
+        border-radius: 12px;
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+      }
+      h3 {
+        text-align: center;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px 50px;
+      }
+      .Bee {
+        color: rgba(13, 10, 226);
+      }
+      .Soy {
+        color: rgb(13, 10, 226);
+      }
+      .Paraffin {
+        color: rgb(13, 10, 226);
+      }
+      .Email {
+        color: #6604ef;
+      }
+      .Facebook {
+        color: #6604ef;
+      }
+      .coder {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DUDUscents</h1>
+      <h2>
+        <strong>homemade scented candles</strong>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/084/original/The-Best-Herbs-for-Making-Scented-Candles-FB.jpg?1686955142"
+        Target="_blank"
+      />
+      <hr />
+      <p>
+        From lavender, warm pumpkin to clean and crisp coffee there is an
+        endless array of deliciously scented candles to choose from. When melted
+        it evaporates which is how scent is releaed into your home, but if you
+        look close you will notice that not all candles are made from the same
+        type of wax even if they look nearly identical.
+        <br />
+      </p>
+      <a
+        href="https://www.marthastewart.com/8061950/candle-wax-type-guide"
+        target="_blank"
+        ><em>For more information visit</em>>
+      </a>
+      <ul>
+        <li class="Bee">Bee wax scented candles</li>
+        <li class="Soy">Soy wax scented candles</li>
+        <li class="Paraffin">Paraffin wax scented candles</li>
+      </ul>
+      <button>Place order</button>
+      <h3>
+        <strong>
+          <span class="Email"> Email:</span> Dntshoto@gmail.com
+          <br />
+          <span class="Facebook">Facebook:</span> DUDUscents
+        </strong>
+      </h3>
+      <p class="coder">This page was built by <strong>MADUO NTSHOTO</strong></p>
+    </div>
+    <script>
+      function FavoriteScent() {
+        let name = prompt("what is you name?");
+        let scent = prompt("which is your favorite candle scent?");
+        let h2 = document.querySelector("h2");
+        if (
+          scent === "lavender" ||
+          scent === "rose" ||
+          scent === "peppermint"
+        ) {
+          h2.innerHTML =
+            "Hi🥰" + name + ",You are a big fan of flower scents🌹🌻🌲";
+        } else {
+          h2.innerHTML =
+            "Hi🥰" + name + ",You are a big fan of food scents🎂🍋🍫";
+        }
+      }
+      let scentButton = document.querySelector("button");
+      scentButton.addEventListener("click", FavoriteScent);
+    </script>
+  </body>
+</html>
